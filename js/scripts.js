@@ -6,30 +6,72 @@ var c = "C";
 var d = "D";
 var m = "M";
 
+// var inputNum = 14
+
 function makeReverseUserArray(inputNum) {
   var userArray = inputNum.toString().split("").reverse();
   return userArray
 }
 
-makeUserArray(49)
+// makeUserArray(49)
 
-function findOnesPlace(userArray) {
-  return makeReverseUserArray(userArray)[0]
-}
 
-function translateOnesPlace(){
-  
-}
 
-function find1To3(input) {
+function find1To3(input, repeater) {
   var outputArray = []
 
   // works for inputs 1 - 3
   for (j = 1; j <= input; ++j) {
-    outputArray.push(i)
+    outputArray.push(repeater)
   }
   return outputArray.join("")
 }
+var finalArray = []
+
+function translateOnesPlace(input){
+  var onesPlace = parseInt(makeReverseUserArray(input)[0])
+  console.log(onesPlace)
+  var outputArray = []
+  if (onesPlace === 1 || onesPlace === 2 || onesPlace === 3 ) {
+    for (j = 1; j <= onesPlace; ++j) {
+      outputArray.push(i)
+    }
+    var outputString = outputArray.join("")
+    console.log(outputString)
+    return outputString
+
+  } else if (onesPlace === 4) {
+      return i + v
+  } else if (onesPlace === 9) {
+      return i + x
+  } else  {
+      var oneToThreeVar = find1To3(onesPlace - 5, i)
+      return v + oneToThreeVar;
+  }
+}
+
+function translateTensPlace(input) {
+  var tensPlace = parseInt(makeReverseUserArray(input)[1])
+  var outputArray = []
+  if (tensPlace === 1 || tensPlace === 2 || tensPlace === 3 ) {
+    for (j = 1; j <= tensPlace; ++j) {
+      outputArray.push(x)
+    }
+    var outputString = outputArray.join("")
+    console.log(outputString)
+    return outputString
+  } else if (tensPlace === 4) {
+      console.log("reached")
+      return x + l
+  } else if (tensPlace === 9) {
+      return x + c
+  } else  {
+      var oneToThreeVar = find1To3(tensPlace - 5, x)
+      return l + oneToThreeVar;
+  }
+}
+console.log(translateTensPlace(56))
+
 //
 // function find20Or30(input) {
 //   var outputArray = []
@@ -52,7 +94,7 @@ function find1To3Or10Or30or50To80(input){
     outputArray.push(x);
     }
     return outputArray.join("")
-  } else if (input === )
+  }
 }
 
 function find4Or9(input) {
@@ -111,5 +153,3 @@ function biquinary(input) {
     return m
   }
 }
-
-findTwoDigit(33)
