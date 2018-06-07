@@ -24,4 +24,13 @@ function find6To8(input) {
   return five + oneToThreeVar;
 }
 
-find6To8(7)
+function findSimpleTeens(input) {
+  // works for inputs 11 - 13 or 16-18
+  if ((input <= 13) && (input >= 11)) {
+    return ten + find1To3(input - 10)
+  } else if ((input <= 18) && (input >= 16)) {
+    return ten + find6To8(input - 10)
+  }
+}
+
+findSimpleTeens(13)
