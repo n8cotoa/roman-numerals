@@ -6,7 +6,7 @@ var hundred = "C";
 var fiveHundred = "D";
 var thousand = "M";
 
-function toRomNum(input) {
+function find1To3(input) {
   var outputArray = []
 
   // works for inputs 1 - 3
@@ -14,6 +14,14 @@ function toRomNum(input) {
     outputArray.push(one)
   }
   return outputArray.join("")
+
+
 }
 
-toRomNum(3)
+function find6To8(input) {
+  // works for inputs 6 - 8
+  var oneToThreeVar = find1To3(input - 5)
+  return five + oneToThreeVar;
+}
+
+find6To8(7)
