@@ -19,7 +19,6 @@ function find1To3(input, repeater) {
   }
   return outputArray.join("")
 }
-var finalArray = []
 
 function translateOnesPlace(input){
   var onesPlace = parseInt(makeReverseUserArray(input)[0])
@@ -63,7 +62,7 @@ function translateHundredsPlace(input) {
   } else if (hundredsPlace === 4) {
     return c + d
   } else if (hundredsPlace === 9) {
-    return m + c
+    return c + m
   } else if (hundredsPlace === 0 || hundredsPlace === NaN) {
     return ""
   } else {
@@ -98,10 +97,26 @@ function returnOutput(input) {
   }
 }
 
+function limitValidation(input) {
+  if (input >= 4000) {
+    return false
+  } else if (input <= 0){
+    return false
+  } else {
+    return true
+  }
+
+}
+
 $(document).ready(function() {
   $("#submit").click(function(e){
     e.preventDefault();
-    var results = returnOutput($("#userInput").val())
-    $("#results").text(results)
+    var inputValue = $("#userInput").val()
+      if (limitValidation(inputValue)) {
+        var results = returnOutput(inputValue)
+        $("#results").text(results)
+      } else {
+        alert("Please enter a number between 1 and 3,999")
+      }
   })
 })
