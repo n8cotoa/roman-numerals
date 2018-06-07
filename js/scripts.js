@@ -7,7 +7,13 @@ var fiveHundred = "D";
 var thousand = "M";
 
 function toRomNum(input) {
-  return one + one;
+  var outputArray = []
+
+  // works for inputs 1 - 3
+  for (i = 1; i <= input; ++i) {
+    outputArray.push(one)
+  }
+  return outputArray.join("")
 }
 
-toRomNum(2)
+toRomNum(3)
