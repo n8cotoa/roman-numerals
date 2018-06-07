@@ -6,16 +6,38 @@ var c = "C";
 var d = "D";
 var m = "M";
 
-function find1To3(input) {
+// function find1To3(input) {
+//   var outputArray = []
+//
+//   // works for inputs 1 - 3
+//   for (j = 1; j <= input; ++j) {
+//     outputArray.push(i)
+//   }
+//   return outputArray.join("")
+// }
+//
+// function find20Or30(input) {
+//   var outputArray = []
+//   for (y = 1; y <= input/10; ++y) {
+//   outputArray.push(x);
+//   }
+//   return outputArray.join("")
+// }
+
+// Translates 1 - 3, and 10, 20, 30 by branching 
+function find1To3Or10Or30(input){
   var outputArray = []
-
-  // works for inputs 1 - 3
-  for (j = 1; j <= input; ++j) {
-    outputArray.push(i)
+  if (input <= 3) {
+    for (j = 1; j <= input; ++j) {
+      outputArray.push(i)
+    }
+    return outputArray.join("")
+  } else if (input === 10 || input === 20 || input === 30) {
+    for (y = 1; y <= input/10; ++y) {
+    outputArray.push(x);
+    }
+    return outputArray.join("")
   }
-  return outputArray.join("")
-
-
 }
 
 function find4Or9(input) {
@@ -57,4 +79,4 @@ function biquinary(input) {
   }
 }
 
-findSimpleTeens(14)
+find20Or30(10)
