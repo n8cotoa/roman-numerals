@@ -30,16 +30,9 @@ var finalArray = []
 
 function translateOnesPlace(input){
   var onesPlace = parseInt(makeReverseUserArray(input)[0])
-  console.log(onesPlace)
   var outputArray = []
   if (onesPlace === 1 || onesPlace === 2 || onesPlace === 3 ) {
-    for (j = 1; j <= onesPlace; ++j) {
-      outputArray.push(i)
-    }
-    var outputString = outputArray.join("")
-    console.log(outputString)
-    return outputString
-
+    return find1To3(onesPlace, i)
   } else if (onesPlace === 4) {
       return i + v
   } else if (onesPlace === 9) {
@@ -54,14 +47,8 @@ function translateTensPlace(input) {
   var tensPlace = parseInt(makeReverseUserArray(input)[1])
   var outputArray = []
   if (tensPlace === 1 || tensPlace === 2 || tensPlace === 3 ) {
-    for (j = 1; j <= tensPlace; ++j) {
-      outputArray.push(x)
-    }
-    var outputString = outputArray.join("")
-    console.log(outputString)
-    return outputString
+    return find1To3(tensPlace, x)
   } else if (tensPlace === 4) {
-      console.log("reached")
       return x + l
   } else if (tensPlace === 9) {
       return x + c
@@ -70,7 +57,23 @@ function translateTensPlace(input) {
       return l + oneToThreeVar;
   }
 }
-console.log(translateTensPlace(56))
+
+function translateHundredsPlace(input) {
+  hundredsPlace = parseInt(makeReverseUserArray(input)[2])
+  outputArray = []
+  if (hundredsPlace === 1 || hundredsPlace === 2 || hundredsPlace === 3) {
+    return find1To3(hundredsPlace, c)
+  } else if (hundredsPlace === 4) {
+    return c + d
+  } else if (hundredsPlace === 9) {
+    return m + c
+  } else {
+    var oneToThreeVar = find1To3(hundredsPlace - 5, c)
+    return d + oneToThreeVar;
+  }
+}
+
+console.log(translateOnesPlace(26))
 
 //
 // function find20Or30(input) {
