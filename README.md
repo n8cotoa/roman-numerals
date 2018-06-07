@@ -1,6 +1,6 @@
 # _Roman Numeral Translator page_
 
-#### _Exercise for building a user Pig Latin Generator using JavaScript, bootstrap, and JQuery, 6/6/2018_
+#### _Exercise for building a user Roman Number Translator using JavaScript, bootstrap, and JQuery, 6/6/2018_
 
 #### By _**Nate Cottle and Rita Bennett-Chew**_
 
