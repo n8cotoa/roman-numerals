@@ -32,14 +32,28 @@ function find6To8(input) {
   return v + oneToThreeVar;
 }
 
-function findSimpleTeens(input) {
-  // works for inputs 11 - 13 or 16-18
+function findTeens(input) {
+  // works for inputs 11 - 19
   if ((input <= 13) && (input >= 11)) {
     return x + find1To3(input - 10)
   } else if (input === 14 || input === 19) {
     return x + find4Or9(input - 10)
   } else if ((input <= 18) && (input >= 16)) {
     return x + find6To8(input - 10)
+  }
+}
+
+function biquinary(input) {
+    if (input === 10) {
+    return x
+  } else if (input === 50) {
+    return l
+  } else if (input === 100) {
+    return c
+  } else if (input === 500) {
+    return d
+  } else if (input === 1000) {
+    return m
   }
 }
 
