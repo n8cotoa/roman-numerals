@@ -40,7 +40,7 @@ _output example: XII
 
 * _the program should output a roman numeral for the numbers 6 - 8 _
 
-_input example: 7
+_input example: 7 (5 + 2)
 _output example: VII
 
 * _the program should output a roman numeral for the numbers 16 - 18 _
