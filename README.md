@@ -1,88 +1,70 @@
-# _Roman Numeral Translator page_
+# Roman Numeral Translator page
 
-#### _Exercise for building a user Roman Number Translator using JavaScript, bootstrap, and JQuery, 6/6/2018_
+#### Exercise for building a user Roman Number Translator using JavaScript, bootstrap, and JQuery, 6/6/2018
 
-#### By _**Nate Cottle and Rita Bennett-Chew**_
+#### By **Nate Cottle and Rita Bennett-Chew**
 
 ## Description
 
-_A web-based Roman Numeral Translator page_
+A web-based Roman Numeral Translator page
 
 ## Setup/Installation Requirements
 
-* _computer_
-* _the internet_
-* _hands_
-* _power outlet_
-
-_more instructions soon_
-
-## Known Bugs
-
-_none yet_
+1. Clone the repository
+1. Open html file in browser
 
 ## Specs list
 
-* _the program should output a roman numeral for the numbers 1 - 3_
+* The program should output a roman numeral for the numbers 1 - 3
+  * input example: 2
+  * output example: II
 
-_input example: 2
-_output example: II
+* The program should output a roman numeral for the numbers 1, 5, 10, 50, 100, 500, and 1000.
+  * input example: 100
+  * output example: C
 
-* _the program should output a roman numeral for the numbers 1, 5, 10, 50, 100, 500, and 1000. _
+* The program should output a roman numeral for the numbers 11 - 13
+  * input example: 12
+  * output example: XII
 
-_input example: 100
-_output example: C
+* The program should output a roman numeral for the numbers 6 - 8
+  * input example: 7 (5 + 2)
+  * output example: VII
 
-* _the program should output a roman numeral for the numbers 11 - 13_
+* The program should output a roman numeral for the numbers 16 - 18
+  * input example: 17
+  * output example: XVII
 
-_input example: 12
-_output example: XII
+* The program should output a roman numeral for the number 4
+  * input example: 4
+  * output example: IV
 
-* _the program should output a roman numeral for the numbers 6 - 8 _
+* The program should output a roman numeral for the number 14
+  * input example: 14
+  * output example: XIV
 
-_input example: 7 (5 + 2)
-_output example: VII
+* The program should output a roman numeral for the number 9
+  * input example: 9
+  * output example: IX
 
-* _the program should output a roman numeral for the numbers 16 - 18 _
+* The program should output a roman numeral for the number 19
+  * input example: 4
+  * output example: XIX
 
-_input example: 17
-_output example: XVII
-
-* _the program should output a roman numeral for the number 4 _
-
-_input example: 4
-_output example: IV
-
-* _the program should output a roman numeral for the number 14 _
-
-_input example: 14
-_output example: XIV
-
-* _the program should output a roman numeral for the number 9 _
-
-_input example: 9
-_output example: IX
-
-* _the program should output a roman numeral for the number 19 _
-
-_input example: 4
-_output example: XIX
-
-* _Test for numbers < 3,999 and only convert those that meet this criteria_
-
-_input example: 4000
-_output example: alert("please enter a # < 3,999")
-
-## Support and contact details
-
-_Nate is available on Fridays at 3:33pm for five minutes at 555-1212, or Rita via e-mail at junk@gmail.com _
+* Test for numbers < 3,999 and only convert those that meet this criteria
+  * input example: 4000
+  * output example: alert("please enter a # < 3,999")
 
 ## Technologies Used
 
-_HTML CSS JavaScript bootstrap JQuery_
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* JQuery
 
 ### License
 
-*usable by all carbon-based entities except the Visigoths (since they are all dead)*
+MIT
 
-Copyright (c) 2018 **_Yoyodyne Enterprises_**
+Copyright (c) 2018 **Nate Cottle**
